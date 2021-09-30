@@ -1,13 +1,15 @@
 const resolveConfig = require("tailwindcss/resolveConfig")
 const tailwindConfig = require("./tailwind.config.js")
-const path = require('path');
+const path = require("path")
 const { theme } = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Tailwind CSS",
+    title: "Dapptools-rs",
     author: "(☞ﾟ∀ﾟ)☞ Dapptools-rs",
-    description: "Landing page for Dapptools.rs",
+    url: "https://dapptools.rs",
+    image: "./og-image.jpg",
+    description: "A drop-in replacement for Dapptools, written in Rust.",
   },
   plugins: [
     `gatsby-plugin-image`,
