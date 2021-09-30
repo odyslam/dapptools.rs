@@ -15,7 +15,14 @@ const Layout = ({ children }) => {
         </header>
         {children}
         <footer className="py-2 text-center text-gray-600 text-xs">
-          (☞ﾟ∀ﾟ)☞ Dapptools.rs ™️
+          (☞ﾟ∀ﾟ)☞ Dapptools.rs™️ |{" "}
+          <a
+            href="https://github.com/odyslam/dapptools.rs"
+            target="_blank"
+            className="text-blue-500"
+          >
+            improve dapptools.rs
+          </a>
         </footer>
       </div>
     </>
