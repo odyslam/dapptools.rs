@@ -6,8 +6,8 @@ const { theme } = resolveConfig(tailwindConfig)
 module.exports = {
   siteMetadata: {
     title: "Gatsby Starter Tailwind CSS",
-    author: "Melanie Nolan",
-    description: "A Gatsby starter to set you up with Tailwind CSS",
+    author: "(☞ﾟ∀ﾟ)☞ Dapptools-rs",
+    description: "Landing page for Dapptools.rs",
   },
   plugins: [
     `gatsby-plugin-image`,
