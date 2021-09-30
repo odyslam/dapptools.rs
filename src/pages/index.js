@@ -26,8 +26,8 @@ export default ({ data }) => {
           <StaticImage
             className="w-full max-w-lg mt-16 mx-auto sm:w-1/2 "
             src="../images/turbodapptools.jpg"
+            alt="dapptools-rs prime meme"
           />
-          }
         </div>
 
         <div className="-mb-20 mx-auto grid grid-flow-col gap-10">
@@ -39,7 +39,6 @@ export default ({ data }) => {
           </a>
           <a
             href="https://github.com/gakonst/dapptools-rss"
-            className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400"
             className="p-4   to-white text-black text-sm font-bold rounded shadow hover:bg-gray-300"
           >
             Join the Telegram group

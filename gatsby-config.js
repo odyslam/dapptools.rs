@@ -7,6 +7,8 @@ module.exports = {
   siteMetadata: {
     title: "Dapptools-rs",
     author: "(☞ﾟ∀ﾟ)☞ Dapptools-rs",
+    url: "https://dapptools.rs",
+    image: "./og-image.jpg",
     description: "A drop-in replacement for Dapptools, written in Rust.",
   },
   plugins: [
