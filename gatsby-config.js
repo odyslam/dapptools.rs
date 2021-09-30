@@ -1,6 +1,6 @@
 const resolveConfig = require("tailwindcss/resolveConfig")
 const tailwindConfig = require("./tailwind.config.js")
-
+const path = require('path');
 const { theme } = resolveConfig(tailwindConfig)
 
 module.exports = {
@@ -10,16 +10,15 @@ module.exports = {
     description: "A Gatsby starter to set you up with Tailwind CSS",
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "Gatsby Starter Tailwind CSS",
-        short_name: "Gatsby Starter Tailwind CSS",
-        start_url: "/",
-        background_color: theme.colors.white,
-        theme_color: theme.colors.teal[500],
-        icon: "static/icon.svg",
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
     {
