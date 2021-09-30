@@ -5,9 +5,9 @@ export default ({ data }) => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
-        <div className="sm:flex sm:flex-row-reverse sm:items-center">
-          <div className="sm:px-2">
-            <h1 className="px-4 pt-5 text-2xl text-left font-bold sm:text-3xl">
+        <div className="flex flex-row items-start sm:flex sm:flex-row-reverse ">
+          <div className="flex flex-col items-center sm:px-2">
+            <h1 className="px-4 text-2xl text-left font-bold sm:text-3xl">
               Dapptools.rs: A drop-in replacement for Dapptools, written in
               Rust.
             </h1>
@@ -22,29 +22,28 @@ export default ({ data }) => {
               </a>
               , especially the symbolic execution and step debugger features.
             </p>
+            <div className="mt-8 mx-auto grid grid-flow-col gap-10">
+              <a
+                href="https://github.com/gakonst/dapptools-rs"
+                className="p-4 text-black text-sm font-bold rounded shadow-lg hover:bg-gray-300"
+              >
+                View on GitHub
+              </a>
+              <a
+                href="https://github.com/gakonst/dapptools-rss"
+                className="p-4 text-black text-sm font-bold rounded shadow-lg hover:bg-gray-300"
+              >
+                Join the Telegram group
+              </a>
+            </div>
           </div>
           <StaticImage
-            className="w-full max-w-lg mt-16 mx-auto sm:w-1/2 "
+            className="w-full max-w-lg h-lg mx-auto sm:w-1/2 "
             src="../images/turbodapptools.jpg"
             alt="dapptools-rs prime meme"
           />
         </div>
-
-        <div className="-mb-20 mx-auto grid grid-flow-col gap-10">
-          <a
-            href="https://github.com/gakonst/dapptools-rs"
-            className="p-4   to-white text-black text-sm font-bold rounded shadow hover:bg-gray-300"
-          >
-            View on GitHub
-          </a>
-          <a
-            href="https://github.com/gakonst/dapptools-rss"
-            className="p-4   to-white text-black text-sm font-bold rounded shadow hover:bg-gray-300"
-          >
-            Join the Telegram group
-          </a>
-        </div>
-        <div className="mx-auto mt-20 w-11/12 sm:px-2 flex flex-col items-center gap-5">
+        <div className="mx-auto -mt-20 w-11/12 sm:px-2 flex flex-col items-center gap-5">
           <h2 className="mx-auto text-xl text-center font-bold">
             {" "}
             How to Instal Dapptools.rs{" "}
