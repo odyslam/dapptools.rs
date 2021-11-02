@@ -4,9 +4,13 @@ import { StaticImage } from "gatsby-plugin-image"
 export default ({ data }) => {
   return (
     <Layout>
-      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
-        <div className="flex flex-row items-start sm:flex sm:flex-row-reverse ">
-          <div className="flex flex-col items-center sm:px-2">
+      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-start">
+        <div className="flex flex-col md:flex-row items-start sm:flex sm:flex-row-reverse ">
+          <StaticImage
+            className="my-5 md:my-0 w-5/6 md:w-1/2 max-w-lg h-lg mx-auto"
+            src="../images/turbodapptools.jpg"
+            alt="dapptools-rs prime meme"
+          /><div className="flex flex-col items-center sm:px-2">
             <h1 className="px-4 text-2xl text-left font-bold sm:text-3xl">
               Dapptools-rs: A drop-in replacement for Dapptools, written in
               Rust.
@@ -22,28 +26,24 @@ export default ({ data }) => {
               </a>
               , especially the symbolic execution and step debugger features.
             </p>
-            <div className="mt-8 mx-auto grid grid-flow-col gap-10">
+            <div className="md:text-sm text-xs mt-8 mx-auto grid grid-flow-col gap-10">
               <a
                 href="https://github.com/gakonst/dapptools-rs"
-                className="p-4 text-black text-sm font-bold rounded shadow-lg hover:bg-gray-300"
+                className="p-4 text-black font-bold rounded shadow-lg hover:bg-gray-300"
               >
                 View on GitHub
               </a>
               <a
                 href="https://t.me/turbodapptools"
-                className="p-4 text-black text-sm font-bold rounded shadow-lg hover:bg-gray-300"
+                className="p-4 text-black font-bold rounded shadow-lg hover:bg-gray-300"
               >
                 Join the Telegram group
               </a>
             </div>
           </div>
-          <StaticImage
-            className="w-full max-w-lg h-lg mx-auto sm:w-1/2 "
-            src="../images/turbodapptools.jpg"
-            alt="dapptools-rs prime meme"
-          />
+
         </div>
-        <div className="mx-auto -mt-20 w-11/12 sm:px-2 flex flex-col items-center gap-5">
+        <div className="mx-auto mt-10 w-11/12 sm:px-2 flex flex-col items-center gap-5">
           <h2 className="mx-auto text-xl text-center font-bold">
             {" "}
             How to install Dapptools-rs{" "}
