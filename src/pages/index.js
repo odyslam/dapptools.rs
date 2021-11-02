@@ -8,7 +8,7 @@ export default ({ data }) => {
         <div className="flex flex-row items-start sm:flex sm:flex-row-reverse ">
           <div className="flex flex-col items-center sm:px-2">
             <h1 className="px-4 text-2xl text-left font-bold sm:text-3xl">
-              Dapptools.rs: A drop-in replacement for Dapptools, written in
+              Dapptools-rs: A drop-in replacement for Dapptools, written in
               Rust.
             </h1>
             <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
@@ -30,7 +30,7 @@ export default ({ data }) => {
                 View on GitHub
               </a>
               <a
-                href="https://github.com/gakonst/dapptools-rss"
+                href="https://t.me/turbodapptools"
                 className="p-4 text-black text-sm font-bold rounded shadow-lg hover:bg-gray-300"
               >
                 Join the Telegram group
@@ -46,20 +46,20 @@ export default ({ data }) => {
         <div className="mx-auto -mt-20 w-11/12 sm:px-2 flex flex-col items-center gap-5">
           <h2 className="mx-auto text-xl text-center font-bold">
             {" "}
-            How to Instal Dapptools.rs{" "}
+            How to install Dapptools-rs{" "}
           </h2>
-          <p className="font-bold">Linux - Apt</p>
+          <p className="font-bold">Ubuntu/Debian Linux</p>
           <div className="mb-0 flex items-center p-3 mx-auto bg-white rounded shadow-xs sm:mx-auto">
             <code className="text-gray-600 text-xs leading-xl">
               curl http://apt.dapptools.rs/dapptools-rs-key.gpg | sudo apt-key
               add - <br />
-              echo "dev [arch=amd64] localhost bullseye" | sudo tee
+              echo "dev [arch=amd64] http://dapptools.rs bullseye" | sudo tee
               /etc/apt/sources.list.d/dapptools-rs.list <br />
               apt-get update <br />
               apt-get install dapptools-rs
             </code>
           </div>
-          <p className="font-bold">MacOS</p>
+          <p className="font-bold">macOS</p>
           <div className="mb-0 flex items-center p-3 mx-auto bg-white rounded shadow-xs sm:mx-auto">
             <code className="text-gray-600 text-xs leading-xl">
               brew install dapptools-rs
